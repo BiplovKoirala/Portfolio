@@ -1,0 +1,6 @@
+ReWriteEngine On
+ReWriteBase /biplovkoirala.com
+RewriteCond %{REQUEST_FILENAME} !-f
+ReWriteCond %{REQUEST_FILENAME} !-d
+
+ReWriteRule ^(.*)$ index.php?/$2 [L]
